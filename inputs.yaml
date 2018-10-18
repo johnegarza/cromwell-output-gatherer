@@ -1,4 +1,4 @@
 ---
-input_file:
+script_text_file:
     class: File
     path: script.txt
