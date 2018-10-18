@@ -2,3 +2,4 @@
 script_text_file:
     class: File
     path: script.txt
+output_dir: /gscmnt/gc2764/cad/jgarza/cromwell-output-gatherer/final_outputs

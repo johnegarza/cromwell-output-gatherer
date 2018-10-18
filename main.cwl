@@ -8,6 +8,8 @@ requirements:
 inputs:
     script_text_file:
         type: File
+    output_dir:
+        type: string
 
 outputs:
     script1_text:
@@ -16,6 +18,9 @@ outputs:
     script2_text:
         type: File
         outputSource: script2/script2_text
+    final:
+        type: File[]
+        outputSource: gatherer/gathered_files
 
 steps:
     script1:
@@ -30,3 +35,10 @@ steps:
             script_text_file: script_text_file
         out:
             [script2_text]
+    gatherer:
+        run: gatherer.cwl
+        in:
+            output_dir: output_dir 
+            all_files: [script1/script1_text, script2/script2_text]
+        out:
+            [gathered_files]
