@@ -29,4 +29,4 @@ outputs:
             type: array
             items: File
         outputBinding:
-            glob: $(inputs.all_files)
+            glob: $(inputs.output_dir)/*
