@@ -29,4 +29,15 @@ outputs:
             type: array
             items: File
         outputBinding:
-            outputEval: $(inputs.all_files.basename)
+            outputEval: ${
+                            var file_paths = [];
+                            var new_path = inputs.output_dir;
+                            if (new_path.slice(-1) != "/") {
+                                new_path += "/";
+                            }
+                            var arrLen = inputs.all_files.length;
+                            for(var i = 0; i < arrLen; i++) {
+                                file_paths.push(new_path + inputs.all_files[i].split("/").pop());
+                            }
+                            return file_paths;
+                        }
