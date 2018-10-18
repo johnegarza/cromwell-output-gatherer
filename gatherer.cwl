@@ -29,4 +29,4 @@ outputs:
             type: array
             items: File
         outputBinding:
-            glob: /gscmnt/gc2764/cad/jgarza/cromwell-output-gatherer/final_outputs/*
+            outputEval: $(inputs.all_files.basename)
