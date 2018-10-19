@@ -12,12 +12,6 @@ inputs:
         type: string
 
 outputs:
-    script1_text:
-        type: File
-        outputSource: script1/script1_text
-    script2_text:
-        type: File
-        outputSource: script2/script2_text
     final:
         type: string[]
         outputSource: gatherer/gathered_files
