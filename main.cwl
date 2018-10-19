@@ -19,7 +19,7 @@ outputs:
         type: File
         outputSource: script2/script2_text
     final:
-        type: File[]
+        type: string[]
         outputSource: gatherer/gathered_files
 
 steps:

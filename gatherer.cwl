@@ -27,7 +27,7 @@ outputs:
     gathered_files:
         type:
             type: array
-            items: File
+            items: string
         outputBinding:
             outputEval: ${
                             var file_paths = [];
@@ -37,7 +37,7 @@ outputs:
                             }
                             var arrLen = inputs.all_files.length;
                             for(var i = 0; i < arrLen; i++) {
-                                file_paths.push(new_path + inputs.all_files[i].split("/").pop());
+                                file_paths.push(new_path + inputs.all_files[i].basename);
                             }
                             return file_paths;
                         }

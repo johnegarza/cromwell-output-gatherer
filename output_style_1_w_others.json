@@ -1,0 +1,25 @@
+{
+  "outputs": {
+    "main.cwl.script1_text": {
+      "format": null,
+      "location": "/gscmnt/gc2764/cad/jgarza/cromwell-output-gatherer/workdir/main.cwl/1f0ec216-4a0a-46a0-981f-1be1d61ca24f/call-script1/execution/script1.txt",
+      "size": 10,
+      "secondaryFiles": [],
+      "contents": null,
+      "checksum": null,
+      "class": "File"
+    },
+    "main.cwl.final": ["/gscmnt/gc2764/cad/jgarza/cromwell-output-gatherer/final_outputs/script1.txt", "/gscmnt/gc2764/cad/jgarza/cromwell-output-gatherer/final_outputs/script2.txt"],
+    "main.cwl.script2_text": {
+      "format": null,
+      "location": "/gscmnt/gc2764/cad/jgarza/cromwell-output-gatherer/workdir/main.cwl/1f0ec216-4a0a-46a0-981f-1be1d61ca24f/call-script2/execution/script2.txt",
+      "size": 10,
+      "secondaryFiles": [],
+      "contents": null,
+      "checksum": null,
+      "class": "File"
+    }
+  },
+  "id": "1f0ec216-4a0a-46a0-981f-1be1d61ca24f"
+}
+
